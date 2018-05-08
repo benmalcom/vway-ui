@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/global.css" media="screen">
+    <link rel="stylesheet" href="css/select-seats.css" media="screen">
+    <title>Select Bus Seats</title>
+</head>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/popper.js/dist/umd/popper.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<body>
+<nav class="navbar navbar-expand-lg bg-white fixed-top shadow-lite">
+    <a class="navbar-brand ml-20" href="#">
+        <img src="images/logo.png" class="logo-main">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+    </button>
+
+    <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+        <form class="form-inline navbar-filter-form">
+            <input class="form-control col-md-3 input-custom" type="text" placeholder="Ikotun, Lagos">
+            <input class="form-control col-md-3 input-custom" type="text" placeholder="Owerri, Imo" aria-label="Search">
+            <input class="form-control col-md-3 input-custom" type="text" placeholder="17 - FEB - 2018"
+                   aria-label="Search">
+            <button class="btn btn-custom btn-custom-app my-2 my-sm-0 ml-2" type="submit">Find Trips</button>
+        </form>
+        <div class="navbar-nav nav-right nav-links mr-30 ml-auto">
+            <a href="#" class="nav-link nav-anchor">HOME</a>
+            <a href="#" class="nav-link nav-anchor">DASHBOARD</a>
+            <a href="#" class="nav-link nav-anchor">TRIPS</a>
+        </div>
+        <a class="nav-profile-link">
+            <img src="images/user_profile.jpg" class="circle circle-xxs">
+        </a>
+
+    </div>
+
+</nav>
+<div class="wrapper flex-grow">
+    <div class="container-fluid white-banner shadow bg-white">
+        <div class="row">
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9 col-sm-12 mx-auto text-center container-main row">
+                <div class="col-md-5 seat-selector-container bg-white shadow open-sans">
+                    <div class="seat-selector-parent">
+                        <div class="row seat-selector">
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-available center-content">D</div>
+                            </div>
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-not-available center-content">23</div>
+                            </div>
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-booked center-content">1</div>
+                            </div>
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-selected center-content">2</div>
+                            </div>
+
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-booked center-content">3</div>
+                            </div>
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-available center-content">4</div>
+                            </div>
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-not-available center-content"></div>
+                            </div>
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-booked center-content">5</div>
+                            </div>
+
+
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-booked center-content">6</div>
+                            </div>
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-booked center-content">7</div>
+                            </div>
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-not-available center-content"></div>
+                            </div>
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-selected center-content">8</div>
+                            </div>
+
+
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-selected center-content">9</div>
+                            </div>
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-available center-content">10</div>
+                            </div>
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-not-available center-content"></div>
+                            </div>
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-selected center-content">11</div>
+                            </div>
+
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-selected center-content">12</div>
+                            </div>
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-available center-content">13</div>
+                            </div>
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-available center-content">14</div>
+                            </div>
+                            <div class="col-md-3 col-3 center-content seat-parent">
+                                <div class="seat seat-booked center-content">15</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-0"><hr></div>
+                    <div class="seat-selector-info">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-4 col-4 center-content">
+                                <div class="text-center">
+                                    <div class="seat-info seat-info-available"></div>
+                                    <p class="text-sm text-muted">Available</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-4 center-content">
+                                <div class="text-center">
+                                    <div class="seat-info seat-info-booked"></div>
+                                    <p class="text-sm text-muted">Booked</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-4 center-content">
+                                <div class="text-center">
+                                    <div class="seat-info seat-info-selected"></div>
+                                    <p class="text-sm text-muted">Selected</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 p-40 selected-seat-info">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 text-left">
+                            <h2 class="mb-0">Select</h2>
+                            <h2>bus seats</h2>
+                        </div>
+                        <div class="col-md-6 col-sm-6 text-left d-flex pb-0">
+                            <p class="align-self-end pb-0">
+                                <button type="button" class="btn btn-custom btn-custom-white pl-20 pr-20">Cancel</button>
+                                <button type="button" class="btn btn-custom btn-custom-app ml-2 pl-20 pr-20">Save</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mt-20">
+                        <div class="col-md-12 table-responsive pb-0">
+                            <table class="table trip-info-table">
+                                <thead>
+                                    <tr class="text-muted">
+                                        <th>Trip number</th>
+                                        <th>Ticket Price</th>
+                                        <th>Total fare</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Trip 2</td>
+                                        <td>N7,500</td>
+                                        <td>N37,500</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="container-fluid mt-0">
+                            <div class="col-md-12 trip-actions">
+                                <div class="row d-flex align-content-end">
+                                    <div class="col-md-6 col-12 text-left">
+                                        <p class="text-muted text-sm">Selected seats</p>
+                                    </div>
+                                    <div class="col-md-6 col-12 text-right text-left-on-mobile">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label text-muted text-sm" for="defaultCheck1">
+                                                Select all available seats
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid mt-10">
+                        <div class="row selected-seat-list">
+                            <div class="seat seat-selected center-content">2</div>
+                            <div class="seat seat-selected center-content">8</div>
+                            <div class="seat seat-selected center-content">9</div>
+                            <div class="seat seat-selected center-content">11</div>
+                            <div class="seat seat-selected center-content">12</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

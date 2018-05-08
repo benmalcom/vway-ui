@@ -1,0 +1,243 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    padding-top: 71px;
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #f7f7f7;
+}
+.navbar{
+    background-color: #FFFFFF !important;
+    padding: 13px 0;
+}
+.navbar-brand{
+    margin-left: 50px !important;
+}
+.navbar > .navbar-collapse > .navbar-nav.nav-right > a.nav-anchor{
+    font-size: 10px;
+    color: #444;
+    font-weight: 500;
+}
+.navbar > .navbar-collapse > .nav-profile-link{
+    margin-right: 50px;
+}
+.white-banner{
+    height: 27vh;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.container-main{
+    margin-top: -135px;
+}
+.seat-selector-container{
+    height: 80vh;
+    border-radius: 6px;
+    border: 3px solid #E4E4E4 !important;
+    padding: 50px 40px 0 40px;
+}
+.seat-selector-parent{
+    height: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.seat-selector-info{
+    height: 20%;
+    padding: 10px 50px;
+}
+
+.seat{
+    border-radius: 50%;
+    height: 40px; width: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 12px;
+    box-shadow: 0 0 0.5px #999;
+    cursor: pointer;
+}
+.seat-parent{
+    margin-bottom: 40px;
+}
+.seat.seat-available{
+    border: 1px solid #C4C6C7;
+    color: #000;
+}
+.seat.seat-booked{
+    background-color: #1699E0;
+}
+.seat.seat-selected{
+    background-color: #02D8BE;
+}
+.seat-info{
+    border-radius: 50%;
+    height: 20px; width: 20px;
+    color: #FFFFFF;
+    box-shadow: 0 0 0.5px #999;
+    margin: 0 auto;
+}
+.seat-info.seat-info-available{
+    border: 1px solid #C4C6C7;
+    color: #000;
+}
+.seat-info.seat-info-booked{
+    background-color: #1699E0;
+}
+.seat-info.seat-info-selected{
+    background-color: #02D8BE;
+}
+.seat.seat-not-available{
+    visibility: hidden;
+}
+
+.trip-info-table th{
+    font-size: 12px;
+    font-weight: 500;
+    border-top: none;
+    border-bottom: 1px solid #000;
+}
+.trip-info-table td{
+    font-size: 25px;
+    font-weight: 500;
+    border: none;
+}
+.trip-actions{
+    border-bottom: 2px solid #DEE2E6;
+}
+.selected-seat-list .seat{
+    margin: 5px;
+}
+.selected-seat-list .seat:first-child{
+    margin-left: 0;
+}
+
+
+/*
+  ##Device = Most of the Smart phones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px){
+    .text-left-on-mobile{
+        text-align: left !important;
+    }
+    .trip-info-table th{
+        font-size: 10px;
+    }
+    .trip-info-table td{
+        font-size: 15px;
+    }
+    .selected-seat-info{
+        padding-left: 5px !important;
+    }
+    .white-banner{
+        height: 27vh !important;
+        padding-top: 50px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .container-main{
+        margin-top: -7rem;
+    }
+
+    .navbar-brand{
+        margin-left: 10px !important;
+    }
+    .navbar-filter-form,
+    .navbar-nav.nav-right,
+    .nav-profile-link{
+        margin: 5px !important;
+    }
+    .navbar-filter-form button{
+        margin-left: 0 !important;
+    }
+    .navbar > .navbar-collapse > .navbar-nav.nav-right > a.nav-link{
+        float: left;
+        margin: 2px;
+    }
+    .white-banner{
+        height: auto;
+        padding-top: 30px;
+    }
+
+    .seat-selector-info{
+        height: 30%;
+        padding: 0;
+    }
+    .seat-selector-parent{
+        height: 75%;
+        margin: 0;
+    }
+    .seat-selector-container{
+        height: 80vh;
+        padding: 40px 20px;
+    }
+
+
+}
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .white-banner{
+        height: 27vh !important;
+        padding-top: 50px !important;
+        padding-bottom: 10px !important;
+    }
+    .seat-selector-parent{
+        height: 75%;
+        padding: 40px 0;
+        margin: 0;
+    }
+    .seat-selector-info{
+        height: 30%;
+        padding: 0;
+    }
+}
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    body{
+        padding-top: 68px;
+    }
+    .white-banner{
+        height: 22vh;
+        padding-top: 50px;
+    }
+    .seat-parent{
+        margin-bottom: 30px;
+    }
+    .seat-selector-container{
+        height: 70vh;
+        padding: 45px 15px;
+    }
+    .seat-selector-parent{
+        height: 90%;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+
+}
