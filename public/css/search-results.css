@@ -1,0 +1,121 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    padding-top: 71px;
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #f7f7f7;
+}
+.navbar{
+    background-color: #FFFFFF !important;
+    padding: 13px 0;
+}
+.navbar-brand{
+    margin-left: 50px !important;
+}
+.navbar > .navbar-collapse > .navbar-nav.nav-right > a.nav-anchor{
+    font-size: 10px;
+    color: #444;
+    font-weight: 500;
+}
+.navbar > .navbar-collapse > .nav-profile-link{
+    margin-right: 50px;
+}
+.search-container{
+    height: 32vh;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.business-item{
+    border-radius: 4px;
+    padding: 15px 10px;
+    box-shadow: rgba(0,0,0,0.2) 1px 1px 7px !important;
+}
+
+.business-item .text-switch-business{
+    opacity: 0.7;
+}
+.business-item-parent{
+    margin-bottom: 30px;
+}
+
+
+/*
+  ##Device = Most of the Smart phones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px){
+    .navbar-brand{
+        margin-left: 10px !important;
+    }
+    .navbar-filter-form,
+    .navbar-nav.nav-right,
+    .nav-profile-link{
+        margin: 5px !important;
+    }
+    .navbar-filter-form button{
+        margin-left: 0 !important;
+    }
+    .navbar > .navbar-collapse > .navbar-nav.nav-right > a.nav-link{
+        float: left;
+        margin: 2px;
+    }
+    .search-container{
+        height: auto;
+        padding-top: 30px;
+    }
+    .business-item-parent,
+    .business-item{
+        margin: 0 auto !important;
+    }
+    .business-item-parent{
+        margin-bottom: 5px !important;
+    }
+}
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .search-container{
+        height: auto;
+        padding-top: 30px;
+    }
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    .search-container{
+        height: auto;
+        padding-top: 30px;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/global.css" media="screen">
+    <link rel="stylesheet" href="css/search-results.css" media="screen">
+    <title>Search Results</title>
+</head>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/popper.js/dist/umd/popper.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<body>
+<nav class="navbar bg-white fixed-top shadow-lite">
+    <a class="navbar-brand ml-20" href="#">
+        <img src="images/logo.png" class="logo-main">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+    </button>
+
+    <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+        <form class="form-inline navbar-filter-form">
+            <input class="form-control col-md-3 input-custom" type="text" placeholder="Ikotun, Lagos">
+            <input class="form-control col-md-3 input-custom" type="text" placeholder="Owerri, Imo" aria-label="Search">
+            <input class="form-control col-md-3 input-custom" type="text" placeholder="17 - FEB - 2018"
+                   aria-label="Search">
+            <button class="btn btn-custom btn-custom-app my-2 my-sm-0 ml-2" type="submit">Find Trips</button>
+        </form>
+        <div class="navbar-nav nav-right nav-links mr-30 ml-auto">
+            <a href="#" class="nav-link nav-anchor">HOME</a>
+            <a href="#" class="nav-link nav-anchor">DASHBOARD</a>
+            <a href="#" class="nav-link nav-anchor">TRIPS</a>
+        </div>
+        <a class="nav-profile-link">
+            <img src="images/user_profile.jpg" class="circle circle-xxs">
+        </a>
+
+    </div>
+
+</nav>
+<div class="wrapper flex-grow">
+    <div class="container-fluid search-container shadow bg-white">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <h2 class="mb-0">Search results</h2>
+                <p class="text-sm text-muted open-sans">107 trips found from 16 transport companies</p>
+            </div>
+            <div class="col-md-10 mx-auto">
+                <hr/>
+            </div>
+            <div class="col-md-10 mx-auto row d-flex justify-content-between p-0 d-flex">
+                <form class="form-inline navbar-filter-form col-md-7 col-sm-12 d-flex justify-content-between">
+                    <input class="form-control col-md-3 col-4 input-custom darker" type="text" placeholder="Ikotun, Lagos">
+                    <input class="form-control col-md-3 col-4 input-custom darker" type="text" placeholder="Owerri, Imo">
+                    <input class="form-control col-md-3 col-4 input-custom darker" type="text" placeholder="17 - FEB - 2018">
+                    <button class="btn btn-custom btn-custom-white my-1" type="submit">Find Trips</button>
+                </form>
+                <form class="form-inline navbar-filter-form col-md-5 col-sm-12 ml-auto d-flex justify-content-between">
+                    <label class="text-sm text-muted">Filter </label>
+                    <input class="form-control col-md-5 col-5 input-custom darker" type="text" placeholder="Type name">
+                    <select class="form-control col-md-5 col-5 input-custom darker">
+                        <option>Unbooked</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-sm-12 mx-auto mt-30 text-center">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 business-item-parent">
+                        <div class="business-item col-sm-12 col-12 text-right bg-white row m-0">
+                            <div class="col-md-4 col-4 business-item-image center-content">
+                                <div class="business-image-placeholder">
+                                    <img src="images/company_logo/abc_transport.png" class="circle circle-xs">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-8 center-content business-item-details text-left pl-0 pr-0">
+                                <div class="text-left">
+                                    <h6 class="mb-1 text-muted mt-1 business-item-name text-sm">
+                                        ABC Transports
+                                    </h6>
+                                    <h5 class="text-md p-0">
+                                        From <strong>N12,000</strong>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 business-item-parent">
+                        <div class="business-item col-sm-12 col-12 text-right bg-white row m-0">
+                            <div class="col-md-4 col-4 business-item-image center-content">
+                                <div class="business-image-placeholder">
+                                    <img src="images/company_logo/gig_motors.png" class="circle circle-xs">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-8 center-content business-item-details text-left pl-0 pr-0">
+                                <div class="text-left">
+                                    <h6 class="mb-1 text-muted mt-1 business-item-name text-sm">
+                                        ABC Transports
+                                    </h6>
+                                    <h5 class="text-md p-0">
+                                        From <strong>N12,000</strong>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 business-item-parent">
+                        <div class="business-item col-sm-12 col-12 text-right bg-white row m-0">
+                            <div class="col-md-4 col-4 business-item-image center-content">
+                                <div class="business-image-placeholder">
+                                    <img src="images/company_logo/abc_transport.png" class="circle circle-xs">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-8 center-content business-item-details text-left pl-0 pr-0">
+                                <div class="text-left">
+                                    <h6 class="mb-1 text-muted mt-1 business-item-name text-sm">
+                                        ABC Transports
+                                    </h6>
+                                    <h5 class="text-md p-0">
+                                        From <strong>N12,000</strong>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 business-item-parent">
+                        <div class="business-item col-sm-12 col-12 text-right bg-white row m-0">
+                            <div class="col-md-4 col-4 business-item-image center-content">
+                                <div class="business-image-placeholder">
+                                    <img src="images/company_logo/gig_motors.png" class="circle circle-xs">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-8 center-content business-item-details text-left pl-0 pr-0">
+                                <div class="text-left">
+                                    <h6 class="mb-1 text-muted mt-1 business-item-name text-sm">
+                                        ABC Transports
+                                    </h6>
+                                    <h5 class="text-md p-0">
+                                        From <strong>N12,000</strong>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 business-item-parent">
+                        <div class="business-item col-sm-12 col-12 text-right bg-white row m-0">
+                            <div class="col-md-4 col-4 business-item-image center-content">
+                                <div class="business-image-placeholder">
+                                    <img src="images/company_logo/abc_transport.png" class="circle circle-xs">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-8 center-content business-item-details text-left pl-0 pr-0">
+                                <div class="text-left">
+                                    <h6 class="mb-1 text-muted mt-1 business-item-name text-sm">
+                                        ABC Transports
+                                    </h6>
+                                    <h5 class="text-md p-0">
+                                        From <strong>N12,000</strong>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 business-item-parent">
+                        <div class="business-item col-sm-12 col-12 text-right bg-white row m-0">
+                            <div class="col-md-4 col-4 business-item-image center-content">
+                                <div class="business-image-placeholder">
+                                    <img src="images/company_logo/gig_motors.png" class="circle circle-xs">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-8 center-content business-item-details text-left pl-0 pr-0">
+                                <div class="text-left">
+                                    <h6 class="mb-1 text-muted mt-1 business-item-name text-sm">
+                                        ABC Transports
+                                    </h6>
+                                    <h5 class="text-md p-0">
+                                        From <strong>N12,000</strong>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 business-item-parent">
+                        <div class="business-item col-sm-12 col-12 text-right bg-white row m-0">
+                            <div class="col-md-4 col-4 business-item-image center-content">
+                                <div class="business-image-placeholder">
+                                    <img src="images/company_logo/abc_transport.png" class="circle circle-xs">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-8 center-content business-item-details text-left pl-0 pr-0">
+                                <div class="text-left">
+                                    <h6 class="mb-1 text-muted mt-1 business-item-name text-sm">
+                                        ABC Transports
+                                    </h6>
+                                    <h5 class="text-md p-0">
+                                        From <strong>N12,000</strong>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 business-item-parent">
+                        <div class="business-item col-sm-12 col-12 text-right bg-white row m-0">
+                            <div class="col-md-4 col-4 business-item-image center-content">
+                                <div class="business-image-placeholder">
+                                    <img src="images/company_logo/gig_motors.png" class="circle circle-xs">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-8 center-content business-item-details text-left pl-0 pr-0">
+                                <div class="text-left">
+                                    <h6 class="mb-1 text-muted mt-1 business-item-name text-sm">
+                                        ABC Transports
+                                    </h6>
+                                    <h5 class="text-md p-0">
+                                        From <strong>N12,000</strong>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
